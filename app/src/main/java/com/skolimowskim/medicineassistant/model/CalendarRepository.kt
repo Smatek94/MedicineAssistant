@@ -1,6 +1,7 @@
 package com.skolimowskim.medicineassistant.model
 
 import io.reactivex.Observable
+import java.util.*
 
 class CalendarRepository {
 
@@ -13,7 +14,13 @@ class CalendarRepository {
         }
     }
 
+    // todo get calendar from database
     fun getCalendar(): Observable<MedCalendar> {
-        return Observable.just(MedCalendar()) // todo get calendar from database
+        val medCalendar = MedCalendar()
+        medCalendar.entries.add(MedCalendarEntry(Medicine("test1"), Date(System.currentTimeMillis())))
+        medCalendar.entries.add(MedCalendarEntry(Medicine("test2"), Date(System.currentTimeMillis())))
+        medCalendar.entries.add(MedCalendarEntry(Medicine("test3"), Date(System.currentTimeMillis())))
+        return Observable.just(medCalendar)
+//        return Observable.just(MedCalendar())
     }
 }
