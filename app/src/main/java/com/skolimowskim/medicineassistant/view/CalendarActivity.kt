@@ -3,7 +3,9 @@ package com.skolimowskim.medicineassistant.view
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.skolimowskim.medicineassistant.viewModel.CalendarViewModel
 import com.skolimowskim.medicineassistant.R
 import com.skolimowskim.medicineassistant.model.MedCalendar
@@ -25,6 +27,7 @@ class CalendarActivity : AppCompatActivity() {
         setContentView(R.layout.activity_calendar)
 
         calendarAdapter = CalendarAdapter(LayoutInflater.from(this))
+        calendar_recycler.layoutManager = LinearLayoutManager(this, LinearLayout.VERTICAL, false)
         calendar_recycler.adapter = calendarAdapter
     }
 
