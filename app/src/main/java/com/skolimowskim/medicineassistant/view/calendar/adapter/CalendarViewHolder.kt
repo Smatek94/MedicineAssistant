@@ -1,12 +1,12 @@
-package com.skolimowskim.medicineassistant.view
+package com.skolimowskim.medicineassistant.view.calendar.adapter
 
 import android.view.View
-import androidx.recyclerview.widget.RecyclerView
-import com.skolimowskim.medicineassistant.model.MedCalendarEntry
+import com.skolimowskim.medicineassistant.model.BaseEntry
+import com.skolimowskim.medicineassistant.utils.recycler.BaseViewHolder
 
-class CalendarViewHolder(view: View) : BaseViewHolder<MedCalendarEntry>(view) {
+class CalendarViewHolder(view: View) : BaseViewHolder<BaseEntry>(view) {
 
-    private lateinit var calendarEntry: MedCalendarEntry
+    private lateinit var calendarEntry: BaseEntry
 
     init {
 
@@ -14,7 +14,7 @@ class CalendarViewHolder(view: View) : BaseViewHolder<MedCalendarEntry>(view) {
 
     // ****************************************************************************************************************************************
 
-    override fun populateData(calendarEntry: MedCalendarEntry) {
+    override fun populateData(calendarEntry: BaseEntry) {
         this.calendarEntry = calendarEntry
     }
 }
