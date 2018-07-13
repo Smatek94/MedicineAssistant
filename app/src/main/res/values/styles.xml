@@ -8,4 +8,24 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    // *************************************************************************************************************
+
+    <style name="TextViewPrimary" parent="TextAppearance.AppCompat">
+        <item name="textColor">@color/gray</item>
+    </style>
+
+    <style name="TextViewPrimary.Medium">
+        <item name="textSize">@dimen/text_medium</item>
+    </style>
+
+    // *************************************************************************************************************
+
+    <style name="TextViewSecondary" parent="TextAppearance.AppCompat">
+        <item name="textColor">@color/light_gray</item>
+    </style>
+
+    <style name="TextViewSecondary.Medium">
+        <item name="textSize">@dimen/text_medium</item>
+    </style>
+
 </resources>
