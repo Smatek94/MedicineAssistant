@@ -1,4 +1,4 @@
-package com.skolimowskim.medicineassistant.view
+package com.skolimowskim.medicineassistant.view.calendar
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import com.skolimowskim.medicineassistant.viewModel.CalendarViewModel
 import com.skolimowskim.medicineassistant.R
 import com.skolimowskim.medicineassistant.model.MedCalendar
 import com.skolimowskim.medicineassistant.utils.Utils
+import com.skolimowskim.medicineassistant.view.calendar.adapter.CalendarAdapter
 import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.main.activity_calendar.*
 

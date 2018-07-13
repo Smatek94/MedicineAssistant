@@ -17,9 +17,9 @@ class CalendarRepository {
     // todo get calendar from database
     fun getCalendar(): Observable<MedCalendar> {
         val medCalendar = MedCalendar()
-        medCalendar.entries.add(MedCalendarEntry(Medicine("test1"), Date(System.currentTimeMillis())))
-        medCalendar.entries.add(MedCalendarEntry(Medicine("test2"), Date(System.currentTimeMillis())))
-        medCalendar.entries.add(MedCalendarEntry(Medicine("test3"), Date(System.currentTimeMillis())))
+        medCalendar.entries.add(BaseEntry(Medicine("test1"), Date(System.currentTimeMillis())))
+        medCalendar.entries.add(BaseEntry(Medicine("test2"), Date(System.currentTimeMillis())))
+        medCalendar.entries.add(BaseEntry(Medicine("test3"), Date(System.currentTimeMillis())))
         return Observable.just(medCalendar)
 //        return Observable.just(MedCalendar())
     }

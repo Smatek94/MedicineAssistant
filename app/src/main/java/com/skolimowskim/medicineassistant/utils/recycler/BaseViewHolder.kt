@@ -1,4 +1,4 @@
-package com.skolimowskim.medicineassistant.view
+package com.skolimowskim.medicineassistant.utils.recycler
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
